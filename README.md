@@ -27,20 +27,21 @@ CaliForge Hub is a React-powered fitness dashboard tailored for calisthenics ent
    ```bash
    git clone https://github.com/AKRAM-2002/Gym-DashBoard.git
    ```
+### Usage
 
-2. Change into the project directory:
+1. Change into the project directory:
 
     ```bash
     cd Gym-DashBoard
     ```
 
-3. Install dependencies:
+2. Install dependencies:
 
     ```bash
     npm install
     ```
 
-4. Start the development server:
+3. Start the development server:
 
     ```
     npm start
