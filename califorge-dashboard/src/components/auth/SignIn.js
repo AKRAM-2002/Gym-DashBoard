@@ -1,15 +1,18 @@
 // components/auth/SignIn.js
 import React from 'react';
 import styled from 'styled-components';
-import { FaFacebook, FaGoogle, FaGithub } from 'react-icons/fa';
+import {FaFacebook, FaGoogle} from 'react-icons/fa';
+import { SiGmail } from "react-icons/si";
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
   return (
     <Container>
       <AuthContainer>
-        <Title>Gym Dashboard</Title>
+        <Title>Califorge Dashboard</Title>
+        
         <Subtitle>
-          <a href="#">start your 14-day free trial</a>
+          <Link to="/auth/sign-up">Create a new account</Link>
         </Subtitle>
         <Form>
           <InputLabel>Email address</InputLabel>
@@ -44,11 +47,12 @@ const SignIn = () => {
             <FaFacebook/>
           </SocialButton>
           <SocialButton>
-            <FaGoogle/>
+            <SiGmail/>
           </SocialButton>
           <SocialButton>
-          <FaGithub />
+            <FaGoogle/>
           </SocialButton>
+          
         </SocialButtonsContainer>
       </AuthContainer>
     </Container>
@@ -64,7 +68,7 @@ const Container = styled.div`
 `;
 
 const AuthContainer = styled.div`
-  max-width: 400px;
+  min-width: 400px;
   margin: 0 auto;
   background-color: white;
   padding: 2rem;
@@ -105,24 +109,31 @@ const InputLabel = styled.label`
 const RememberForgotContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  
+
 `;
 
 const RememberMeContainer = styled.div`
   display: flex;
   align-items: center;
+
+  
 `;
 
 const RememberLabel = styled.label`
   font-size: 0.875rem;
   color: #4a5568;
   margin-left: 0.25rem;
+  
 `;
 
 const ForgotPasswordLink = styled.a`
   font-size: 0.875rem;
   color: var(--secondary-color);
   text-decoration: none;
+  right: 0;
+  position: relative;
 `;
 
 const SignInButton = styled.button`
@@ -151,10 +162,13 @@ const OrSeparator = styled.div`
   margin: 1rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0;
 `;
 
 const OrLine = styled.div`
-  flex-grow: 1;
+  width: 100%;
   height: 1px;
   background-color: #cbd5e0;
 `;
@@ -169,6 +183,7 @@ const SocialButtonsContainer = styled.div`
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 `;
 
 const SocialButton = styled.button`

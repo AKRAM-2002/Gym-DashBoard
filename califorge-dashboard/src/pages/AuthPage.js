@@ -10,7 +10,7 @@ const AuthPage = () => {
     <Routes>
       <Route path="*" element={<SignIn/>} />
       <Route path="/auth/sign-up" element={<SignUp/>} />
-      <Route path="/auth/forgot-password" element={ForgotPassword} />
+      <Route path="/auth/forgot-password" element={<ForgotPassword/>} />
     </Routes>
   );
 };
