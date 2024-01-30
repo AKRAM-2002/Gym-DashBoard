@@ -46,3 +46,73 @@ CaliForge Hub is a React-powered fitness dashboard tailored for calisthenics ent
     ```
     npm start
     ```
+
+### Project Structure
+```bash	
+/src
+  /assets
+    /images
+    /icons
+  /components
+    /common
+      Button.js
+      Input.js
+      ...
+    /auth
+      SignIn.js
+      SignUp.js
+      UserProfile.js
+      EditProfile.js
+      ChangePassword.js
+      ...
+    /dashboard
+      DashboardOverview.js
+      ...
+    /workouts
+      WorkoutCalendar.js
+      RoutineBuilder.js
+      WorkoutHistory.js
+      AiAssistant.js
+      ...
+    /progress
+      ProgressCharts.js
+      ...
+    /achievements
+      AchievementsView.js
+      ...
+    /nutrition
+      NutritionLog.js
+      ...
+    /community
+      CommunityFeed.js
+      UserConnections.js
+      ...
+  /context
+    AuthContext.js
+    UserDataContext.js
+    WorkoutDataContext.js
+    ...
+  /hooks
+    useAuth.js
+    useUserData.js
+    useWorkoutData.js
+    ...
+  /pages
+    Home.js
+    UserProfilePage.js
+    Explore.js
+    ...
+  /services
+    authService.js
+    userDataService.js
+    workoutDataService.js
+    ...
+  /styles
+    globalStyles.js
+    theme.js
+  /utils
+    helpers.js
+    constants.js
+  App.js
+  index.js
+```

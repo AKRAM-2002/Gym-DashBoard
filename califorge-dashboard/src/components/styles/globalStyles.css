@@ -1,0 +1,81 @@
+/* Colors */
+:root {
+    --primary-color: #001F3F;
+    --secondary-color: #6F5DE3;
+    --accent-color: #000C40;
+    --neutral-light: #003440;
+    --neutral-dark: #1E0040;
+    --success-color: #28A745;
+    --error-color: #DC3545;
+    --warning-color: #FFC107;
+    --info-color: #17A2B8;
+  }
+
+  /* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  body {
+    color: var(--neutral-dark);
+    background-color: #fff;
+  }
+  
+
+
+/* Reset Styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
